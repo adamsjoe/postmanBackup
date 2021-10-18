@@ -36,7 +36,7 @@
       "response": []
     },
     {
-      "name": "guessAge Copy",
+      "name": "guessAgeCopy",
       "id": "1ef5857c-afb5-4f1b-89cc-fd89034f78d2",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
@@ -95,7 +95,7 @@
   ],
   "variable": [
     {
-      "id": "6815223d-686c-4734-a2aa-522375079173",
+      "id": "12934bdc-afbf-436a-82e5-f164ef538784",
       "key": "baseUrl",
       "value": "https://swapi.dev/api/people"
     }
