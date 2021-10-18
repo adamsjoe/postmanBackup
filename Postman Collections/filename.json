@@ -7,7 +7,7 @@
   "item": [
     {
       "name": "guessAge",
-      "_postman_id": "a1315089-0c0b-477f-a580-840fe877e6f5",
+      "id": "a1315089-0c0b-477f-a580-840fe877e6f5",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -51,7 +51,7 @@
           }
         }
       ],
-      "_postman_id": "19f57781-d90a-4022-86d6-30de0d9f1b40",
+      "id": "19f57781-d90a-4022-86d6-30de0d9f1b40",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -61,14 +61,43 @@
         "url": "{{baseUrl}}"
       },
       "response": []
+    },
+    {
+      "name": "guessAge Copy",
+      "id": "1ef5857c-afb5-4f1b-89cc-fd89034f78d2",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.agify.io/?name=Joe",
+          "protocol": "https",
+          "host": [
+            "api",
+            "agify",
+            "io"
+          ],
+          "path": [
+            ""
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "Joe"
+            }
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "variable": [
     {
-      "id": "0560ed3c-51f9-4fba-940f-564a00132fb9",
+      "id": "c4fb217c-f9ec-4beb-aa91-1c1f5859d29d",
       "key": "baseUrl",
-      "value": "https://swapi.dev/api/people",
-      "type": "string"
+      "value": "https://swapi.dev/api/people"
     }
   ]
 }
