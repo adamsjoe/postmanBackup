@@ -36,33 +36,6 @@
       "response": []
     },
     {
-      "name": "swapi - people",
-      "event": [
-        {
-          "listen": "test",
-          "script": {
-            "id": "0b4ee2eb-d0ef-49bf-b008-94a8df7b8b78",
-            "exec": [
-              "pm.test(\"Status code is 200\", function () {\r",
-              "    pm.response.to.have.status(200);\r",
-              "});"
-            ],
-            "type": "text/javascript"
-          }
-        }
-      ],
-      "id": "19f57781-d90a-4022-86d6-30de0d9f1b40",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": "{{baseUrl}}"
-      },
-      "response": []
-    },
-    {
       "name": "guessAge Copy",
       "id": "1ef5857c-afb5-4f1b-89cc-fd89034f78d2",
       "protocolProfileBehavior": {
@@ -91,11 +64,38 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "swapi - people",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "0b4ee2eb-d0ef-49bf-b008-94a8df7b8b78",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "id": "19f57781-d90a-4022-86d6-30de0d9f1b40",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}"
+      },
+      "response": []
     }
   ],
   "variable": [
     {
-      "id": "c4fb217c-f9ec-4beb-aa91-1c1f5859d29d",
+      "id": "6815223d-686c-4734-a2aa-522375079173",
       "key": "baseUrl",
       "value": "https://swapi.dev/api/people"
     }
