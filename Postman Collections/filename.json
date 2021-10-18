@@ -1,0 +1,74 @@
+{
+  "info": {
+    "_postman_id": "a7f31c73-02aa-45ab-a765-bbb1c0c36d3a",
+    "name": "Test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "guessAge",
+      "_postman_id": "a1315089-0c0b-477f-a580-840fe877e6f5",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.agify.io/?name=Joe",
+          "protocol": "https",
+          "host": [
+            "api",
+            "agify",
+            "io"
+          ],
+          "path": [
+            ""
+          ],
+          "query": [
+            {
+              "key": "name",
+              "value": "Joe"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "swapi - people",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "0b4ee2eb-d0ef-49bf-b008-94a8df7b8b78",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "    pm.response.to.have.status(200);\r",
+              "});"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "19f57781-d90a-4022-86d6-30de0d9f1b40",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}"
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "id": "0560ed3c-51f9-4fba-940f-564a00132fb9",
+      "key": "baseUrl",
+      "value": "https://swapi.dev/api/people",
+      "type": "string"
+    }
+  ]
+}
