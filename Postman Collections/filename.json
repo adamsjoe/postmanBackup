@@ -113,11 +113,33 @@
         "url": "http://10.100.65.98:9515/session"
       },
       "response": []
+    },
+    {
+      "name": "chrome local",
+      "id": "f6e3c1a0-e8e1-4d2a-bd14-aaccf6452a72",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"desiredCapabilities\": {\r\n        \"caps\": {\r\n            \"nativeEvents\": false,\r\n            \"browserName\": \"chrome\",\r\n            \"version\": \"\",\r\n            \"platform\": \"ANY\"\r\n        }\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "localhost:9515/session"
+      },
+      "response": []
     }
   ],
   "variable": [
     {
-      "id": "9c7692c1-e258-4fcd-b9c3-081d80f6d090",
+      "id": "d35d426b-7c16-43cf-80d5-f30050ad0e76",
       "key": "baseUrl",
       "value": "https://swapi.dev/api/people"
     }
