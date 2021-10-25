@@ -91,11 +91,33 @@
         "url": "{{baseUrl}}"
       },
       "response": []
+    },
+    {
+      "name": "chrome remote",
+      "id": "c0600a46-24eb-4566-a6e6-7102eb62c855",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"desiredCapabilities\": {\r\n        \"caps\": {\r\n            \"nativeEvents\": false,\r\n            \"browserName\": \"chrome\",\r\n            \"version\": \"\",\r\n            \"platform\": \"ANY\"\r\n        }\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "http://10.100.65.98:9515/session"
+      },
+      "response": []
     }
   ],
   "variable": [
     {
-      "id": "12934bdc-afbf-436a-82e5-f164ef538784",
+      "id": "06c3e4bb-bd28-4664-95d7-4129503b55af",
       "key": "baseUrl",
       "value": "https://swapi.dev/api/people"
     }
